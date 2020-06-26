@@ -4,8 +4,10 @@ class Post < ApplicationRecord
   # when passed in, it will not track the given fields
   # in Activities.
 
-  acts_as_tracked(exclude_activity_attributes: :content)
+  # acts_as_tracked(exclude_activity_attributes: :content)
 
+  acts_as_tracked
+  
   # Just including
   #
   # `acts_as_tracked`
